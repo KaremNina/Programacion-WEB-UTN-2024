@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tp Clase 4 UTN</title>
+
+    <!--La estructura HTML básica incluye etiquetas estándar como <!DOCTYPE html>, <html>, <head>, <meta>, <title>, y <body>-->
+    <!--El estilo del cuerpo (body) establece la fuente, el color de fondo, el color del texto, y centra el contenido en la página.-->
+    <!--.container usa un grid layout con dos columnas y un espacio (gap) entre las tarjetas.-->
+    <!--.card establece el color de fondo, padding, bordes redondeados y una sombra para las tarjetas.
+-->
+    <!--h3 en .card establece el título de cada tarjeta y elimina el margen superior.-->
+
+    <style>
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(0, 0%, 0%);
+            color: #fcfcfc;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 800px;
+            padding: 20px;
+        }
+        .card {
+            background-color: #575252;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .card a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .card a:hover {
+            text-decoration: underline;
+        }
+        
+        
+    </style>
+    <!--Estilos CSS para Enlaces:
+    .card a establece el color del enlace y elimina el subrayado predeterminado.
+    .card a:hover agrega un subrayado cuando el cursor pasa sobre el enlace para mejorar la accesibilidad visual.  
+    -->
+
+</head>
+<!--Dentro del <body>, la clase container contiene cuatro div con la clase card.-->
+    <!--Cada card tiene un h3 para el título y un p para la descripción del artículo.-->
+<body>
+    <div class="container">
+        <div class="card">
+            <h3>Blog</h3>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/console">Developer essentials: JavaScript console methods</a></h2>
+            <p>The JavaScript console is an essential tool for web development. Learn new and fun ways to use the console to display data and debug.</p>
+        </div>
+        <div class="card">
+            <h3>Blog</h3>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility">Introduction to web sustainability</a></h2>
+            <p>What can web designers and developers do to build a more sustainable web? This post explores the environmental impacts of web technologies.</p>
+        </div>
+        <div class="card">
+            <h3>Web APis</h3>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Web/API/Custom_Highlight_API">CSS Custom Highlight API</a></h2>
+            <p>The CSS Custom Highlight API provides a mechanism for styling arbitrary text ranges on a document by using JavaScript to create them.</p>
+        </div>
+        <div class="card">
+            <h3>CSS</h3>
+            <h2><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value">&lt;color&gt;</a></h2>
+
+            <p>The &lt;color&gt; CSS data type represents a color. A &lt;color&gt; may also include an alpha-channel transparency value, indicating how the color should composite with its background.</p>
+        </div>
+    </div>
+</body>
+</html>
